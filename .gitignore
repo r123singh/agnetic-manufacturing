@@ -1,0 +1,16 @@
+/node_modules
+/dist
+/build
+/public
+/src
+/test
+/docs
+/examples
+/scripts
+/config
+/coverage
+
+output.gif
+.env
+concept.txt
+how-to.md

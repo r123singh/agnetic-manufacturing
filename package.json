@@ -1,0 +1,26 @@
+{
+  "name": "react-agents",
+  "version": "1.0.0",
+  "description": "Multi-Agent System for Industrial Manufacturing Optimization",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "advanced": "node advanced-system.js",
+    "advanced-dev": "node --watch advanced-system.js",
+    "test": "node test-system.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "multi-agent",
+    "manufacturing",
+    "optimization",
+    "openai",
+    "agents"
+  ],
+  "author": "",
+  "license": "MIT"
+} 
