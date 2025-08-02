@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Manufacturing - Autonomous Intelligence for Smarter Manufacturing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="background-animations">
+        <div class="gear gear-1"></div>
+        <div class="gear gear-2"></div>
+        <div class="gear gear-3"></div>
+        <div class="conveyor-belt"></div>
+        <div class="sensor-node sensor-1"></div>
+        <div class="sensor-node sensor-2"></div>
+        <div class="sensor-node sensor-3"></div>
+        <div class="data-flow-line line-1"></div>
+        <div class="data-flow-line line-2"></div>
+        <div class="data-flow-line line-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🏭</span>
+                <span class="logo-text">Agentic Manufacturing</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Autonomous Intelligence for 
+                    <span class="gradient-text">Smarter Manufacturing</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your manufacturing operations with AI-powered multi-agent systems that optimize production, ensure compliance, and coordinate complex workflows autonomously.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToForm()">
+                        Get Started Free
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToDemo()">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="agent-network">
+                    <div class="agent-node agent-1">
+                        <div class="agent-icon">📊</div>
+                        <span class="agent-label">Content Agent</span>
+                    </div>
+                    <div class="agent-node agent-2">
+                        <div class="agent-icon">⚙️</div>
+                        <span class="agent-label">Decision Agent</span>
+                    </div>
+                    <div class="agent-node agent-3">
+                        <div class="agent-icon">🤝</div>
+                        <span class="agent-label">Hybrid Agent</span>
+                    </div>
+                    <div class="connection-line line-1-2"></div>
+                    <div class="connection-line line-2-3"></div>
+                    <div class="connection-line line-1-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form (Hero) -->
+    <section class="lead-form-section" id="lead-form">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Start Your Manufacturing Transformation</h2>
+                <p>Get access to our AI-powered multi-agent system and see how it can optimize your operations.</p>
+            </div>
+            <form class="lead-form" id="leadForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="workEmail">Work Email</label>
+                        <input type="email" id="workEmail" name="workEmail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="jobRole">Job Role</label>
+                        <select id="jobRole" name="jobRole" required>
+                            <option value="">Select your role</option>
+                            <option value="Engineer">Engineer</option>
+                            <option value="Plant Manager">Plant Manager</option>
+                            <option value="Operations Lead">Operations Lead</option>
+                            <option value="CTO">CTO</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="manufacturingDomain">Manufacturing Domain</label>
+                        <select id="manufacturingDomain" name="manufacturingDomain" required>
+                            <option value="">Select your domain</option>
+                            <option value="Automotive">Automotive</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Pharmaceuticals">Pharmaceuticals</option>
+                            <option value="Heavy Machinery">Heavy Machinery</option>
+                            <option value="Consumer Goods">Consumer Goods</option>
+                            <option value="Metal Fabrication">Metal Fabrication</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Get Access Now</button>
+            </form>
+            <div class="form-success" id="formSuccess" style="display: none;">
+                <div class="success-icon">✅</div>
+                <h3>Thank You!</h3>
+                <p>Your request has been submitted successfully. We'll be in touch soon with access details.</p>
+                <button class="btn btn-secondary" id="downloadBtn" onclick="openGitHub()" disabled>
+                    Download Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Capabilities</h2>
+                <p>Advanced AI agents working together to revolutionize your manufacturing operations</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Real-Time Decision Agents</h3>
+                    <p>Intelligent agents that analyze sensor data and optimize production schedules in real-time, making autonomous decisions to maximize efficiency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Self-Healing Workflows</h3>
+                    <p>Automated systems that detect and resolve production issues before they impact output, ensuring continuous operation and minimal downtime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Cross-System Coordination</h3>
+                    <p>Multi-agent architecture that coordinates across all manufacturing systems, from quality control to supply chain management.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Advanced forecasting capabilities that predict maintenance needs, quality issues, and production bottlenecks before they occur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>See how our AI agents perceive, plan, and act within your manufacturing ecosystem</p>
+            </div>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Perceive</h3>
+                        <p>AI agents continuously monitor sensor data, production metrics, and environmental conditions across your entire manufacturing floor.</p>
+                        <div class="step-visual">
+                            <div class="sensor-grid">
+                                <div class="sensor active"></div>
+                                <div class="sensor active"></div>
+                                <div class="sensor active"></div>
+                                <div class="sensor active"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Plan</h3>
+                        <p>Advanced algorithms analyze patterns, predict outcomes, and develop optimal strategies for production optimization and quality control.</p>
+                        <div class="step-visual">
+                            <div class="planning-visual">
+                                <div class="data-point"></div>
+                                <div class="data-point"></div>
+                                <div class="data-point"></div>
+                                <div class="trend-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Act</h3>
+                        <p>Autonomous agents execute optimized decisions, adjusting production parameters, scheduling maintenance, and coordinating workflows seamlessly.</p>
+                        <div class="step-visual">
+                            <div class="action-visual">
+                                <div class="gear-spinning"></div>
+                                <div class="status-indicator success"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Benefits -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industry Benefits</h2>
+                <p>Tailored impact across manufacturing domains</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Pharmaceuticals</h3>
+                    <p>Predictive quality control ensuring 99.9% compliance with strict regulatory requirements and zero batch failures.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚗</div>
+                    <h3>Automotive</h3>
+                    <p>Real-time defect detection and automated quality assurance, reducing recalls by 85% and improving production efficiency.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Heavy Machinery</h3>
+                    <p>Energy optimization and predictive maintenance reducing operational costs by 30% while extending equipment lifespan.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>Electronics</h3>
+                    <p>Precision manufacturing with micron-level accuracy, reducing waste by 60% and improving yield rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Hear from manufacturing leaders who've transformed their operations</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The multi-agent system reduced our downtime by 75% and improved quality metrics by 40%. It's like having a team of expert engineers working 24/7."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <span>Plant Manager, TechCorp Industries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Predictive maintenance capabilities saved us $2.3M in unplanned downtime costs last year. The ROI was immediate and substantial."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍🔬</div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <span>Operations Lead, Precision Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The autonomous coordination between our production lines increased throughput by 35% while maintaining perfect quality standards."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💻</div>
+                        <div class="author-info">
+                            <h4>Dr. Emily Watson</h4>
+                            <span>CTO, Advanced Manufacturing Co.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🏭</span>
+                        <span class="logo-text">Agentic Manufacturing</span>
+                    </div>
+                    <p>Autonomous intelligence for smarter manufacturing operations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="https://github.com/r123singh/agnetic-manufacturing" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#lead-form">Get Started</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>support@agnetic-manufacturing.com</li>
+                        <li>+1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Agentic Manufacturing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
